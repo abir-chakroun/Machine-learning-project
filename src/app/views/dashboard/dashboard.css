@@ -1,0 +1,25 @@
+.card {
+    background-color:rgb(58, 65, 73);
+    border-color:black;
+
+}
+.card-header{
+     border-color:black;
+     background-color: 	rgb(47, 53, 58);
+     color: #ffffff;
+
+}
+.card-body{
+    border-color:black;
+    color: #ffffff;
+
+} 
+
+.container-fluid{
+    background-color:rgb(35, 40, 44);
+}
+.card-footer{
+    border-color:black;
+     background-color: 	rgb(47, 53, 58);
+     color: #ffffff;
+}

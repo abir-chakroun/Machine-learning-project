@@ -1,0 +1,30 @@
+
+  <div class="container-fluid">
+  <div *ngIf="users.length!=0">
+      <div class="animated fadeIn">
+    <div class="row">
+      <ul class="col-sm-6 col-md-4" *ngFor='let user of users'>
+          <div class="card">
+          <div class="card-header">USER</div>
+          <div class="card-body"> 
+            FULL NAME : {{user.username}}
+            <br>
+             EMAIL :{{user.email}} 
+            <br>
+          </div>
+          <div class="card-footer">
+              <button class="btn btn-sm btn-success" type="button" (click)='adduser(user)'>
+              <i class="fa fa-dot-circle-o"></i> ADD TO THE USERS LIST</button>
+              <button class="btn btn-sm btn-danger" type="button" (click)='Bloqueuser(user._id)'>
+              <i class="fa fa-ban"></i> REMOVE </button>
+              </div>
+          </div>
+          
+        
+      </ul>
+  </div>
+</div>
+  </div>
+  <br>
+  <br>
+  </div>

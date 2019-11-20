@@ -1,0 +1,327 @@
+<app-header
+  [navbarBrandRouterLink]="['/dashboard']"
+  [fixed]="true"
+  [navbarBrandFull]="{src: '/assets/img/avatars/logo.png', width: 100, height: 50}"
+  [navbarBrandMinimized]="{src:'https://cdn1.iconfinder.com/data/icons/android-9/500/android_12-512.png', alt: 'Logo', class: 'img-fluid'}"
+  [sidebarToggler]="false"
+  [asideMenuToggler]="false">
+  <ul class="nav navbar-nav d-md-down-none">
+        <li class="nav-item px-3">
+        <a class="nav-link" [routerLink]="['/About']"> About</a> 
+      </li>
+    <li class="nav-item px-3">
+      <a class="nav-link" [routerLink]="['/Help']"> Help </a>
+    </li>
+  </ul>
+</app-header>
+<br>
+<br>
+
+
+<!-- <div class="animated fadeIn">
+  <div class="card">
+    <div class="card-header">
+      <i class="icon-drop"></i> Theme colors
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
+          <div class="bg-primary theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+          <h6>Brand Primary Color</h6>
+        </div>
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
+          <div class="bg-secondary theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+          <h6>Brand Secondary Color</h6>
+        </div>
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
+          <div class="bg-success theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+          <h6>Brand Success Color</h6>
+        </div>
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
+          <div class="bg-danger theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+          <h6>Brand Danger Color</h6>
+        </div>
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
+          <div class="bg-warning theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+          <h6>Brand Warning Color</h6>
+        </div>
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
+          <div class="bg-info theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+          <h6>Brand Info Color</h6>
+        </div>
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
+          <div class="bg-light theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+          <h6>Brand Light Color</h6>
+        </div>
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
+          <div class="bg-dark theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+          <h6>Brand Dark Color</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <i class="icon-drop"></i> Grays
+    </div>
+    <div class="card-body">
+      <div class="row mb-3">
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
+          <div class="bg-gray-100 theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+          <h6>Gray 100 Color</h6>
+        </div>
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
+          <div class="bg-gray-200 theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+          <h6>Gray 200 Color</h6>
+        </div>
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
+          <div class="bg-gray-300 theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+          <h6>Gray 300 Color</h6>
+        </div>
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
+          <div class="bg-gray-400 theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+          <h6>Gray 400 Color</h6>
+        </div>
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
+          <div class="bg-gray-500 theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+          <h6>Gray 500 Color</h6>
+        </div>
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
+          <div class="bg-gray-600 theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+          <h6>Gray 600 Color</h6>
+        </div>
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
+          <div class="bg-gray-700 theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+          <h6>Gray 700 Color</h6>
+        </div>
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
+          <div class="bg-gray-800 theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+          <h6>Gray 800 Color</h6>
+        </div>
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
+          <div class="bg-gray-900 theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+          <h6>Gray 900 Color</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <i class="icon-drop"></i> Additional colors
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
+          <div class="bg-blue theme-color mb-3 w-75 rounded mb-2" style="padding-top:75%"></div>
+          <h6>Blue Color</h6>
+        </div>
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
+          <div class="bg-light-blue theme-color mb-3 w-75 rounded mb-2" style="padding-top:75%"></div>
+          <h6>Light Blue Color</h6>
+        </div>
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
+          <div class="bg-indigo theme-color mb-3 w-75 rounded mb-2" style="padding-top:75%"></div>
+          <h6>Indigo Color</h6>
+        </div>
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
+          <div class="bg-purple theme-color mb-3 w-75 rounded mb-2" style="padding-top:75%"></div>
+          <h6>Purple Color</h6>
+        </div>
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
+          <div class="bg-pink theme-color mb-3 w-75 rounded mb-2" style="padding-top:75%"></div>
+          <h6>Pink Color</h6>
+        </div>
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
+          <div class="bg-red theme-color mb-3 w-75 rounded mb-2" style="padding-top:75%"></div>
+          <h6>Red Color</h6>
+        </div>
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
+          <div class="bg-orange theme-color mb-3 w-75 rounded mb-2" style="padding-top:75%"></div>
+          <h6>Orange Color</h6>
+        </div>
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
+          <div class="bg-yellow theme-color mb-3 w-75 rounded mb-2" style="padding-top:75%"></div>
+          <h6>Yellow Color</h6>
+        </div>
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
+          <div class="bg-green theme-color mb-3 w-75 rounded mb-2" style="padding-top:75%"></div>
+          <h6>Green Color</h6>
+        </div>
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
+          <div class="bg-teal theme-color mb-3 w-75 rounded mb-2" style="padding-top:75%"></div>
+          <h6>Teal Color</h6>
+        </div>
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
+          <div class="bg-cyan theme-color mb-3 w-75 rounded mb-2" style="padding-top:75%"></div>
+          <h6>Cyan Color</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+<!-- 
+<div class="animated fadeIn">
+  
+  <div class="card"></div>
+  <div class="card-header" background>
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-heading">
+          <h1>Man must explore, and this is exploration at its greatest</h1>
+          
+          <h2 class="subheading">Problems look mighty small from 150 miles up</h2>
+          
+          <span class="meta">Posted by
+            <a href="#">Start Bootstrap</a>
+            on October 31, 2017 &middot; <span class="reading-time" title="Estimated read time">
+
+ 4 mins  read </span>
+</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+<!---->
+<!-- -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark " style="position: fixed; width: 100%;overflow: hidden" >
+  <ul class="nav navbar-nav d-md-down-none">
+    <li class="nav-item px-3">
+      <a class="nav-link" (click)="users()">CONTROL THE USERS </a>
+    </li>
+    <li class="nav-item px-3">
+      <a class="nav-link"(click)="classifier()">CHOOSE CLASSIFIER AND RETRAIN THE MODEL  </a>
+    </li>
+    <li class="nav-item px-3">
+        <a class="nav-link" (click)="admin()" > SHOW USERS PROPOSITIONS</a>
+      </li>
+  </ul>
+  <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item d-md-down-none">
+          <a class="nav-link" href="/#/dashboard"><i class="icons font-xl d-block mt-2 cui-account-logout"> </i></a>
+        </li>
+    <li class="nav-item d-md-down-none">
+      <a class="nav-link" (click)="admin()"><i class="icon-bell icons font-xl d-block mt-2"></i><span class="badge badge-pill badge-danger">{{propositions.length}}</span></a>
+    </li>
+    <li class="nav-item d-md-down-none">
+      <a class="nav-link" (click)="home()"><i class="icon-list icons font-xl d-block mt-2"></i></a>
+    </li>
+    <li class="nav-item d-md-down-none">
+        <a class="nav-link" (click)="home()"><i class="icon-user icons font-2xl d-block mt-2"></i></a>
+      </li>
+    <!-- <li class="nav-item dropdown" dropdown placement="bottom right">
+      <a class="nav-link" data-toggle="dropdown" href="/#/Home" role="button" aria-haspopup="true" aria-expanded="false" dropdownToggle (click)="false">
+        <i class="icon-user icons font-2xl d-block mt-2" href="/#/Admin"></i>
+      </a>
+      <div class="dropdown-menu dropdown-menu-right" *dropdownMenu aria-labelledby="simple-dropdown">
+        <div class="dropdown-header text-center"><strong>Account</strong></div>
+        <a class="dropdown-item" href="#"><i class="fa fa-bell-o"></i> Updates<span class="badge badge-info">42</span></a>
+        <a class="dropdown-item" href="/#/Admin"><i class="fa fa-envelope-o"></i> Messages<span class="badge badge-success">42</span></a>
+        <a class="dropdown-item" href="#"><i class="fa fa-tasks"></i> Tasks<span class="badge badge-danger">42</span></a>
+        <a class="dropdown-item" href="#"><i class="fa fa-comments"></i> Comment<span class="badge badge-warning">42</span></a>
+        <div class="dropdown-header text-center"><strong>Settings</strong></div>
+        <a class="dropdown-item" href="/#/Home"><i class="fa fa-user"></i> Profile</a>
+        <a class="dropdown-item" href="#"><i class="fa fa-wrench"></i> Setting</a>
+        <a class="dropdown-item" href="#"><i class="fa fa-usd"></i> Payments<span class="badge badge-dark">42</span></a>
+        <a class="dropdown-item" href="#"><i class="fa fa-file"></i> Projects<span class="badge badge-primary">42</span></a>
+        <div class="divider"></div>
+        <a class="dropdown-item" href="#"><i class="fa fa-shield"></i> Lock account</a>
+        <a class="dropdown-item" href="/#/dashboard"><i class="fa fa-lock"></i> Logout</a>
+      </div>
+    </li>
+  -->
+  </ul>
+</nav>
+
+
+<!-- side bar -->
+<!-- 
+    <app-sidebar [fixed]="true" [display]="'lg'">
+        <app-sidebar-nav [navItems]="navItems" [perfectScrollbar] [disabled]="sidebarMinimized"></app-sidebar-nav>
+        <app-sidebar-minimizer></app-sidebar-minimizer>
+      </app-sidebar>
+    -->
+<div class="app-body">
+    <!-- <app-sidebar [fixed]="true" [display]="'lg'">
+        <app-sidebar-nav [navItems]="navItems" [perfectScrollbar] [disabled]="sidebarMinimized"></app-sidebar-nav>
+        <app-sidebar-minimizer></app-sidebar-minimizer>
+      </app-sidebar>
+    -->
+<main class="main">
+  <br>
+  <br>
+  <div *ngIf="h"><app-chartjs></app-chartjs></div>
+<!-- Admin pages-->
+<div *ngIf="a">
+<div class="container-fluid">
+<div class="animated fadeIn">
+<div *ngIf="propositions.length!=0">
+  <div class="row">
+    <ul class="col-sm-6 col-md-4" *ngFor='let proposition of propositions'>
+        <div class="card">
+        <div class="card-header">UNCHECKED PROPOSITION</div>
+        <div class="card-body"> 
+          TITLE  : {{proposition.titre}} 
+          <br>
+          CONTENTS :{{proposition.Contenu}}
+          <br>
+          LABEL :{{proposition.label}}
+        </div>
+        <div>
+        <button class="btn btn-block btn-success" (click)="confirmeproposition(proposition)"type="button" >ADD</button>
+        <button class="btn btn-block btn-danger" (click)=deleteproposition(proposition._id) type="button">DELETE</button>
+        </div>
+      </div>
+      
+    </ul>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- this.h=false;
+  this.u=false;
+  this.c=false;
+  this.r=false;
+  this.a=true;
+-->
+<div *ngIf="u"> <app-users></app-users> 
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
+<div *ngIf="c"><app-classifier></app-classifier></div>
+<br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<div *ngIf="r"><app-relance></app-relance></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- Fin Proposition -->
+</main>

@@ -1,0 +1,139 @@
+
+  
+<app-header 
+  [navbarBrandRouterLink]="['/dashboard']"
+  [fixed]="true"
+  [navbarBrandFull]="{src: '/assets/img/avatars/logo.png', width: 100, height: 50}"
+  [navbarBrandMinimized]="{src:'https://cdn1.iconfinder.com/data/icons/android-9/500/android_12-512.png', alt: 'Logo', class: 'img-fluid'}"
+  [sidebarToggler]="false"
+  [asideMenuToggler]="false">
+  <ul class="nav navbar-nav d-md-down-none" style="backgroud-color:black">
+        <li class="nav-item px-3">
+        <a class="nav-link" [routerLink]="['/About']"> About</a> 
+      </li>
+    <li class="nav-item px-3">
+      <a class="nav-link" [routerLink]="['/Help']"> Help </a>
+    </li>
+  </ul>
+  </app-header>
+  <br>
+  <br>
+  <!--end nav bar blanche -->
+  <!-- navbar user -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark " style="position: fixed; width: 100%;overflow: hidden" >
+      <ul class="nav navbar-nav d-md-down-none">
+        <!-- <li class="nav-item px-3">
+          <a class="nav-link" (click)="users()">CONTROL THE USERS </a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link"(click)="classifier()">CHOOSE CLASSIFIER AND RETRAIN THE MODEL  </a>
+        </li>
+        <li class="nav-item px-3">
+            <a class="nav-link" (click)="admin()" > SHOW USERS PROPOSITIONS</a>
+          </li>
+        <li class="nav-item px-3">
+          <a class="nav-link" href="/#/dashboard" > LOGOUT</a>
+        </li>
+      -->
+      </ul>
+
+      <ul class="nav navbar-nav ml-auto">
+        <!-- 
+        <li class="nav-item d-md-down-none">
+          <a class="nav-link" ><i class="icon-bell"></i><span class="badge badge-pill badge-danger"></span></a>
+        </li>
+      -->
+      <li class="nav-item dropdown" dropdown placement="bottom right">
+          <a class="nav-link" data-toggle="dropdown" href="/#/Addproposition" role="button" aria-haspopup="true" aria-expanded="false" >
+            
+              <i class="icon-plus icons font-xl d-block mt-2"> </i>
+          </a>
+        </li>
+    <li class="nav-item d-md-down-none">
+      <a class="nav-link" href="/#/dashboard"><i class="icons font-xl d-block mt-2 cui-account-logout">  </i></a>
+    </li>
+    <li class="nav-item dropdown" dropdown placement="bottom right">
+      <a class="nav-link" data-toggle="dropdown" href="/#/Home" role="button" aria-haspopup="true" aria-expanded="false" >
+        <i class="icon-user icons font-xl d-block mt-2">  </i>
+      </a>
+    </li>
+      </ul>
+    </nav>
+  
+  <!-- end nav bar user -->
+<!-- --> 
+ <div class="app-body">
+<main class="main">
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-md-6 ">
+        <div class="card mx-4">
+          <div class="card-body p-4">
+            <form (submit)="addproposition()">
+              <h1 style="color: white;">NEW PROPOSITION</h1>
+              <div class="form-group">
+                  <label class="col-md-3 col-form-label">Title:</label>
+                  <div class="col-sm-10">          
+                      <input type="text" class="form-control" name="titre" placeholder="titre" autocomplete="titre" required [(ngModel)]="proposition.titre">
+                    </div>
+                </div>
+              <!-- <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="col-md-3 col-form-label">Title:</label>
+                </div>
+                <input type="text" class="form-control" name="titre" placeholder="titre" autocomplete="titre" required [(ngModel)]="proposition.titre">
+              </div>
+            -->
+                  <div class="form-group">
+                      <label class="col-md-3 col-form-label">Content:</label>
+                <div class="col-sm-10">
+                <textarea type="text-area" class="form-control" name="Contenu" placeholder="Contenu" autocomplete="Contenu"  [(ngModel)]="proposition.Contenu"></textarea>
+              </div>
+              </div>
+              <div class="form-group">
+                  <label class="col-md-3 col-form-label">Label:</label>
+                  <div class="col-sm-10">
+                <input type="text" class="form-control" name="label" placeholder="label" autocomplete="label"  [(ngModel)]="proposition.label">
+              </div>
+              </div>
+              <br> 
+              <button type="envoyer" (click)="send()" class="btn btn-block btn-success">Send</button>
+            </form>
+          </div>
+  
+        </div>
+      </div>
+    
+    <div class="col-md-6">
+        <div *ngIf="s">
+      <div class="modal-dialog modal-success" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h4 class="modal-title">DONE ! THANK YOU </h4>
+          </div>
+          <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal" (click)="close()" >Close</button>
+         <!--  <button class="btn btn-success" (click)="close()" type="button">Save changes</button> -->
+          </div>
+  </div>
+
+  </div>
+  
+</div>
+</div>
+</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+
+
+    </main>
+    </div>
+
+  
+  

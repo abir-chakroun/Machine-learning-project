@@ -1,0 +1,112 @@
+<div class="container-fluid">
+<div class="animated fadeIn">
+  <div class="row">
+  <div class="col-md-6">
+<div class="card">
+    <div class="card-header">
+    <strong>Choose Classifier</strong> </div>
+    <div class="card-body">
+    <form class="form-horizontal" action="" method="post">
+      <!-- SVM weight -->
+    <div class="form-group row">
+     <label class="col-md-3 col-form-label">SVM</label>
+    <div class="col-md-9">
+    <input class="form-control" id="svm" name="svm" type="number"  placeholder="Enter SVM Weight.." autocomplete="SVM" required [(ngModel)]="c.svm">
+    <span class="help-block">Please enter SVM Weight</span>
+    </div>
+    </div>
+  <!-- Fin SVM weight -->
+  <!-- LOG weight -->
+  <div class="form-group row">
+      <label class="col-md-3 col-form-label">LOG</label>
+     <div class="col-md-9">
+     <input class="form-control" id="log" name="log" type="number"  placeholder="Enter LOG Weight.." autocomplete="LOG" required [(ngModel)]="c.log">
+     <span class="help-block">Please enter LOG Weight</span>
+     </div>
+     </div>
+   <!-- Fin LOG weight -->
+   <!-- decision tree  -->
+   <div class="form-group row">
+      <label class="col-md-3 col-form-label">Decision tree</label>
+     <div class="col-md-9">
+     <input class="form-control" id="dt" name="dt" type="number"  placeholder="Enter decision tree Weight.." autocomplete="dt" required [(ngModel)]="c.dt">
+     <span class="help-block">Please enter decision tree Weight</span>
+     </div>
+     </div>
+   <!-- Fin decision tree weight -->
+   <div class="form-group row">
+      <label class="col-md-3 col-form-label">Random Forest</label>
+     <div class="col-md-9">
+     <input class="form-control" id="f" name="f" type="number"  placeholder="Enter Random Forest Weight.." autocomplete="Random Forest" required [(ngModel)]="c.f">
+     <span class="help-block">Please enter Random Forest Weight</span>
+     </div>
+     </div>
+     <!-- Fin Random Forest weight -->
+     <!-- Fin KNN weight -->
+   <div class="form-group row">
+      <label class="col-md-3 col-form-label">KNN</label>
+     <div class="col-md-9">
+     <input class="form-control" id="knn" name="knn" type="number"  placeholder="Enter KNN Weight.." autocomplete="KNN" required [(ngModel)]="c.knn">
+     <span class="help-block">Please enter Random Forest Weight</span>
+     </div>
+     </div>
+     <!-- Fin Random Forest weight -->
+    </form>
+    </div>
+    <div class="card-footer">
+        <button (click)="addClassifier()" class="btn btn-pill btn-block btn-success active" type="envoyer" aria-pressed="true">Retrain Model </button>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-6">
+          <div  *ngIf="(kk!=null)&& n">
+        <div class="modal-dialog modal-success" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h4 class="modal-title">Model Retrained with success</h4>
+            </div>
+            <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal" (click)="close()" >Close</button>
+            <button class="btn btn-success" (click)="close()" type="button">Save changes</button>
+            </div>
+    </div>
+  </div>
+    </div>
+    
+  </div>
+</div>
+<!-- 
+  <div class="modal-dialog modal-success" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Modal title</h4>
+<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+<div class="modal-body">
+<p>One fine body…</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+<button class="btn btn-success" type="button">Save changes</button>
+</div>
+</div>
+
+</div>
+-------------------
+
+      <label>
+     <input type="number" class="form-control" name="i1" placeholder="" autocomplete="" required [(ngModel)]="c.i1">
+     <label class="switch switch-3d switch-primary">
+        <input class="switch-input" type="checkbox" checked="">
+        <span class="switch-slider"></span>
+     </label>
+     </label>
+     <input type="number" class="form-control" name="i2" placeholder="" autocomplete="" required [(ngModel)]="c.i2">
+    <input type="number" class="form-control" name="i3" placeholder="" autocomplete="" required [(ngModel)]="c.i3">
+    <button (click)="addClassifier()"type="envoyer" class="btn btn-block btn-success">Create Account</button>
+    <div *ngIf="kk!=null">{{kk.i1}}</div>
+  </div>
+  </div>
+-->

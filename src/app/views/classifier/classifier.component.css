@@ -1,0 +1,58 @@
+.app-body{
+    background-color: #3a4149;
+}
+.main{
+    background-color: #3a4149;
+}  
+.card {
+    background-color:rgb(58, 65, 73);
+    border-color:black;
+
+}
+.card-header{
+     border-color:black;
+     background-color: 	rgb(47, 53, 58);
+     color: #ffffff;
+
+}
+.card-body{
+    border-color:black;
+    color: #ffffff;
+
+} 
+
+.container-fluid{
+    background-color:rgb(35, 40, 44);
+}
+input{
+    background-color:rgb(58, 65, 73);
+    border-color:black;
+}
+.p{
+    color: #ffffff;
+}
+.card-footer{
+    border-color:black;
+    background-color: 	rgb(47, 53, 58);
+    color: #ffffff;
+}
+
+.modal-content{
+    border-color:rgb(77, 189, 116)
+    ;
+    background-color: 	rgb(47, 53, 58);
+    color: #ffffff;
+}
+.modal-footer{
+    border-color:black;
+    background-color: 	rgb(47, 53, 58);
+    color: #ffffff;
+
+}
+.modal-header{
+    border-color:rgb(77, 189, 116)
+;
+    background-color: 	rgb(77, 189, 116)
+    ;
+    color: #ffffff;
+}
